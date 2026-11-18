@@ -1,0 +1,35 @@
+{
+  "name": "pi-text-tools",
+  "version": "0.1.0",
+  "description": "Pi extension that gives tool calling to OpenRouter models whose endpoints don't support tools (Hermes 4, Venice Uncensored, Cydonia) by emulating it in the prompt.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "openrouter",
+    "tool-calling",
+    "hermes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bean0-0/pi-text-tools.git"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test 'test/*.test.ts'"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  }
+}
